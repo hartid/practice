@@ -1,0 +1,32 @@
+{
+  "feature_cols": [
+    "S2_B01",
+    "S2_B02",
+    "S2_B03",
+    "S2_B04",
+    "S2_B05",
+    "S2_B06",
+    "S2_B07",
+    "S2_B08",
+    "S2_B8A",
+    "S2_B09",
+    "S2_B11",
+    "S2_B12",
+    "S1_VV_20250610",
+    "S1_VH_20250610",
+    "NDVI",
+    "NDMI",
+    "NDBI",
+    "VH_over_VV"
+  ],
+  "target": "is_field",
+  "target_names": {
+    "0": "not_field",
+    "1": "field"
+  },
+  "labeling": "labels.assign_field_labels_df (green, pink, purple field; exclude forest, urban, white)",
+  "proba_threshold": 0.5,
+  "train_rows": 1189500,
+  "test_accuracy": 0.999957965531736,
+  "note": "Модель обучена на разметке «сельхозполе», не на сыром vegetation/bare_soil"
+}
